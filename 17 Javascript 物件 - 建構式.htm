@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17 Javascript 物件 - 建構式</title>
+    <script type="text/Javascript">
+    
+    function Player(name,hp) {  //建構物件的函式
+        //this 代表新建的空白物件
+        this.name=name;
+        this.hp=hp;
+        this.fight=function(){
+            this.hp-=2;
+        };
+        this.rest=function(){
+            this.hp++;
+        };
+        this.report=function(){
+            alert(this.name + ": " + this.hp);
+        };
+    }
+    var player=new Player("John",100);
+    player.fight();
+    player.report();
+    var player2=new Player("Bob",90);
+    player2.fight();
+    player2.report();
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

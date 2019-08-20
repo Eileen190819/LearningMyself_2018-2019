@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18 HTML DOM - 基本觀念 </title>
+    <script type="text/javascript">
+    function change(){
+        var spanObj = document.getElementById("emotion");
+        spanObj.innerHTML = "bad";
+        spanObj.style.color="red";
+        spanObj.style.fontWeight="bold";
+    }
+    </script>
+</head>
+<body>
+    <div>
+        Today is a <span id="emotion">good</span> day.
+    </div>
+    <button onclick="change();">Change</button>
+</body>
+</html> 

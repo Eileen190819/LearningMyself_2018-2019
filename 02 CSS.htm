@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <!-- 設定這個網頁的語言 -->
+<head>
+    <meta charset="UTF-8">    
+    <title>CSS 教學</title>
+    <style type="text/css">
+    .title{font-weight:bold;font-size:20px}
+    .content{height:100px;width:500px;padding:10px;border:1px solid blue;margin-top:10px;margin-bottom:10px}
+    .keyword{color:red}
+    .box{
+        position: absolute;right:0;top:0;
+        width:100px;height:100px;background-color:greenyellow
+    }
+    </style>
+</head>
+<body>
+    <div class="title">今天天氣不錯</div>
+    <div class="content">
+        我去公園散步，餵<span class="keyword">
+        鴿子</span><br>
+        覺得鴿子好可愛喔
+    </div>
+    <!-- 高度和寬度只能設定在div內，span無法設定高跟寬 -->
+    
+    <div class="box">
+    </div>
+
+    <div class="title">公園裡有很多小朋友</div>
+    <div class="content">
+        我去公園散步，餵<span class="keyword">
+        鴿子</span><br> 
+        覺得鴿子<span style="position: relative;top:-4px">2</span>好可愛喔
+    </div>
+</body>
+</html>

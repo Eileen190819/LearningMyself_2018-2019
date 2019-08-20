@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22 JavaScript 自動排程</title>
+    <script type="text/JavaScript">
+    var timer;
+        function init() {
+            timer = document.getElementById("timer");
+            window.setTimeout(countdown,1000);
+        }
+        function countdown() {
+            timer.innerHTML -= 1;
+            if(timer.innerHTML>0){
+                window.setTimeout(countdown,1000);
+            }
+            else{
+ 
+            }            
+        }
+    </script>
+</head>
+<body onload="init();">
+    
+</body>
+</html>

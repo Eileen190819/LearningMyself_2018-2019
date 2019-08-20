@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>21 Javascript 事件處理 - Event Object 事件物件</title>
+<script type="text/Javascript">
+function init() {
+    var btn = document.getElementById("btn");
+    var handler = function(e){
+        alert(e.clientX + "," + e.clientY);
+    };
+    btn.addEventListener("click",handler);
+}
+/*
+    #點擊按鈕 到 出現事件 這中間發生的事:
+    1.使用者點擊了按鈕，觸發click事件。
+    2.瀏覽器主動收集和事件有關的資訊，並製造出Event Object事件物件。
+        var eventObj = 事件物件;
+    3.呼叫已經註冊的事件處理器(事件處理函式)
+        handler(eventObj)
+*/
+
+//匿名函式: 直接當作事件處理器
+//可以寫一個用鍵盤操作的網頁
+document.addEventListener("keydown",function(e){
+    alert(e.keyCode);
+});
+</script>
+</head>
+<body onload="init()">
+    <button id="btn">Click</button>    
+</body>
+</html>
