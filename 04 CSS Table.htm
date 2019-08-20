@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04 CSS表格樣式 - 詳細介紹</title>
+    <style type:"text/css">
+    table{
+        /* border:3px solid #ad1387; */
+        width:200px;
+        border-collapse: collapse;
+    }
+    td{
+        border-bottom:1px dashed #ad1387;
+        padding:10px; 
+    }
+    /* 表格中的第一對tr */
+    tr:nth-child(1){
+        background-color: rgb(168, 89, 138);color: rgb(241, 241, 245);
+    }
+    /* 表格中的第偶數對tr */
+    tr:nth-child(even){
+        background-color: rgb(255, 199, 199)
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>球隊</td>
+            <td>勝</td>
+            <td>敗</td>
+        </tr>
+        <tr>
+            <td>第一隊</td>
+            <td>10</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>第二隊</td>
+            <td>15</td>
+            <td>30</td>
+        </tr>
+    </table>
+</body>
+</html>
