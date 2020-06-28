@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+    <script type="text/javascript">
+    
+       function myFunction(){
+            var h = document.getElementById("h").value;
+            var w = document.getElementById("w").value;
+            var text = w / (h*h);
+            document.getElementById("demo").innerHTML = text;
+        }
+    
+    </script>
+</head>
+<body>
+    <h3>BMI</h3>
+    <div>輸入身高 <input id="h"></div>
+    <div>輸入體重 <input id="w"></div>
+    <button id="btn" onclick="myFunction()">確認</button>
+    <div id="demo">結果：</div>
+</body>
+</html>
