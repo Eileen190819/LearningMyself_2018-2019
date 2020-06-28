@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16 Javascript 物件 - 基礎使用</title>
+    <script type="text/javascript">
+    
+/*
+    // 建立空白物件
+    var point=new Object();
+    //建立物件的成員(屬性與方法)
+    point.x=3; //屬性
+    point.y=4;
+    point.getPosition=function(){ //方法
+        alert(this.x + "," + this.y);
+    }  
+    //使用物件
+    point.getPosition();
+*/
+
+//綜合範例: 遊戲中的玩家設計
+    var player=new Object();
+    player.name="John";
+    player.hp=100;
+    player.fight=function(){
+        this.hp-=2;
+    }
+    player.rest=function(){
+        this.hp++;
+    }
+    player.report=function(){
+        alert(this.name + ":" + this.hp);
+    }
+
+    player.fight();
+    player.rest();
+    player.report();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

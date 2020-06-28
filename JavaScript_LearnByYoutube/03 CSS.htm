@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>03 CSS選擇器的詳細介紹</title>
+
+<style type="text/css">
+/* 01 標籤名稱選擇器 */
+body{
+    font-size:16px;font-family: "微軟正黑體"
+}
+h3{
+    font-size:20px;text-decoration:underline;
+}
+/* 02 class選擇器 */
+div.content{
+    padding: 30px;border: 5px dashed #888888;
+}
+/* 03 id選擇器 */
+#btn{
+    border:3px solid #941111;
+    background-color:hotpink;padding: 5px;
+}
+/* 04 虛擬選擇器 :搭配其他選擇器的使用*/
+    /* 04-01 hover 虛擬選擇器:當滑鼠一道目標上時，套用一組設定 */
+#btn:hover{
+    background-color: aqua;
+}
+    /* 04-02 focus 虛擬選擇器:當目標取得焦點時，套用一組設定 */
+input:focus{
+    border:3px solid #941111;
+}
+/* 05 階層式選擇器 :搭配其他選擇器的使用*/
+.favorite a{
+    color:#2e03ec
+}
+.demo a{
+    color:#10741d
+}
+</style>
+</head>
+
+<body>
+	<h3>我的自我介紹</h3>	
+    <hr>
+    
+    <div class="content">
+       大家好 我是艾琳 
+    </div>
+
+	<h3>My Favorite</h3>
+	<ul class="favorite">
+		<li><a href="https://www.google.com/">Google</a></li>
+		<li><a href="https://www.facebook.com/">Facebook</a></li>
+    </ul>
+    
+    <h3>My Work</h3>
+	<ul class="demo">
+		<li><a href="https://www.google.com/">Google</a></li>
+		<li><a href="https://www.facebook.com/">Facebook</a></li>
+    </ul>
+
+	<h3>MLB Baseball</h3>
+	<table border="5" width="200" cellpadding="10">
+		<tr>
+			<td><b><u>Name</u></b></td>
+			<td>Win</td>
+			<td>Lose</td>
+		</tr>
+		<tr>
+			<td>第一組</td>
+			<td>10</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>Y</td>
+			<td>3</td>
+			<td>5</td>
+		</tr>
+    </table>
+    
+    <h3>和我連絡</h3>
+    <div class="content">
+        填寫訊息<input type="text"><button id="btn">送出</button>
+    </div>
+
+</body>
+</html>
+
+
